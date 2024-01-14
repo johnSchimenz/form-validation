@@ -8,8 +8,35 @@
     <title>Form Validation</title>
 </head>
 <body>
-    <div>
-        <div id="hello">Hello</div>
-    </div>
+    <button type="button" id="open-dialog">Open Dialog Form</button>
+    <dialog class="modal" id="modal">
+        <form action="" method="post">
+            <fieldset>
+                <legend>Collect Online Account Information</legend>
+                <div class="input-container">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required minlength="7">
+                </div>
+                <div class="input-container">
+                    <label for="country">Country: </label>
+                    <input type="text" name="country" id="country" required minlength="3">
+                </div>
+                <div class="input-container">
+                    <label for="zip-code">Zip Code: </label>
+                    <input type="text" name="zip-code" id="zip-code" required length="5">
+                </div>
+                <div class="input-container">
+                    <label for="password">Password: </label>
+                    <input type="text" name="password" id="password" required minlength="8">
+                </div>
+                <div class="input-container">
+                    <label for="confirm-password">Confirm Password: </label>
+                    <input type="text" name="confirm-password" id="confirm-password" required minlength="8">
+                </div>
+                <button type="button" id="submit">Submit</button>
+                <button type="button" id="cancel">Cancel</button>
+            </fieldset>
+        </form>
+    </dialog>
 </body>
 </html>
