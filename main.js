@@ -10,9 +10,17 @@ clickOpenDialogButton.addEventListener('click', (event) => {
     // DOM - Opens up modal from dialog element
     selectDialogForm.showModal();
 
-    // DOM - Shows what happens when Cancel button is clicked
+    // DOM - Functionality of Cancel button
     const clickCancel = document.querySelector('#cancel');
     clickCancel.addEventListener('click', () => {
+
+        // DOM - Dialog modal closes
         selectDialogForm.close();
+    })
+
+    // DOM - Functionality of Submit button
+    const clickSubmit = document.querySelector('#submit');
+    clickSubmit.addEventListener('click', () => {
+        
     })
 })
